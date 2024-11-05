@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas</title>
+    <link rel="stylesheet" href="../estilos/styles_general.css">
+    <link rel="stylesheet" href="../estilos/styles_bebidas.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="caja_logo">
+                <img src="../imagenes/logotransp.png" alt="Logo" id="imagen_logo">
+            </div>
+            <div class="caja_nav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../assets/comida.html">Menú de platos</a></li>
+                <li><a href="../assets/bebidas.html">Menú de bebidas</a></li>
+                <li><a href="../assets/curiosidades.html">Curiosidades</a></li>
+                <li><a href="../assets/reservas.html">Reservas</a></li>
+                </ul>
+            </div>
+        </header>
+        <nav class="box_1">
+            <div class="caja_1">
+                <div id="comida">
+                    <p>Men&uacute;</p>
+                    <p>De</p>
+                    <p>Bebidas</p>
+                </div>
+            </div>
+        </nav>
+        <div class="box_2">
+            <div class="caja_3">
+                <div class="subcaja_1">La Paz</div>
+                <div class="subcaja_2" data-keywords="la paz">
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/Lp-mocochinchi.jpeg" height="266px" width="250px"
+                                style="width: 250px ;cursor: pointer;" onclick="openModal()">
+                            <div class="nombre">Mocochinchi</div>
+                            <div id="Lp" class="departamento">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModal()">&times;</span>
+                                    <img src="../imagenes/Lp-mocochinchi.jpeg" alt="imagen" class="imag">
+                                    <p>Bebida a base de durazno seco,</p>
+                                    <p>con canela y clavo de olor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caja_4">
+                <div class="subcaja_1">Oruro</div>
+                <div class="subcaja_2" data-keywords="oruro">
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/Or-api.jpeg" alt="" height="266px" width="250px"
+                                style="width: 250px ;cursor: pointer;" onclick="openModalor()">
+                            <div class="nombre">Ap&iacute;</div>
+                            <div id="Or" class="departamentor">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalor()">&times;</span>
+                                    <img src="../imagenes/Or-api.jpeg" class="imag">
+                                    <br>
+                                    <p>Bebida a base de Ma&iacute;z.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caja_5">
+                <div class="subcaja_1">Potos&iacute;</div>
+                <div class="subcaja_2" data-keywords="potosi">
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/Po-alojadecañahua.webp" alt="" height="266px" width="250px"
+                                style="width: 250px ;cursor: pointer;" onclick="openModalpo()">
+                            <div class="nombre">Aloja de Ca&ntilde;ahua</div>
+                            <div id="Po" class="departamentopo">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalpo()">&times;</span>
+                                    <img src="../imagenes/Po-alojadecañahua.webp" class="imag">
+                                    <br>
+                                    <p>Bebida a base de Ca&ntilde;ahua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="caja_6">
+                <div class="subcaja_1">Cochabamba</div>
+                <div class="subcaja_2" data-keywords="cochabamba">
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/Ch-Chicha.jpeg" alt="" height="266px" width="250px"
+                                style="width: 250px ;cursor: pointer;" onclick="openModalco()">
+                            <div class="nombre">Chicha</div>
+                            <div id="Co" class="departamentoco">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalco()">&times;</span>
+                                    <img src="../imagenes/Ch-Chicha.jpeg" class="imag">
+                                    <br>
+                                    <p>Bebida a base de Ca&ntilde;ahua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caja_7">
+                <div class="subcaja_1">Chuquisaca</div>
+                <div class="subcaja_2" data-keywords="chuquisaca">
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/Chu-guarapo.jpeg" alt="" height="266px" width="250px"
+                                style="width: 250px ;cursor: pointer;" onclick="openModalchu()">
+                            <div class="nombre">Guarapo</div>
+                            <div id="Chu" class="departamentochu">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalchu()">&times;</span>
+                                    <img src="../imagenes/Chu-guarapo.jpeg" class="imag">
+                                    <br>
+                                    <p>Bebida a base de Ca&ntilde;ahua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="caja_8">
+                <div class="subcaja_1">Tarija</div>
+                <div class="subcaja_2" data-keywords="tarija">
+
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/Ta-vino.jpg" alt="" height="266px" width="250px"
+                                style="width: 250px ;cursor: pointer;" onclick="openModalta()">
+                            <div class="nombre">Vino</div>
+                            <div id="Ta" class="departamentota">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalta()">&times;</span>
+                                    <img src="../imagenes/Ta-vino.jpg" class="imag">
+                                    <br>
+                                    <p>Bebida a base de Ca&ntilde;ahua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caja_9">
+                <div class="subcaja_1">Santa Cruz</div>
+                <div class="subcaja_2" data-keywords="santa cruz">
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/Sc-somó.jpeg" alt="" height="266px" width="250px"
+                                style="width: 250px ;cursor: pointer;" onclick="openModalsc()">
+                            <div class="nombre">Som&oacute;</div>
+                            <div id="Sc" class="departamentosc">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalsc()">&times;</span>
+                                    <img src="../imagenes/Sc-somó.jpeg" class="imag">
+                                    <br>
+                                    <p>Bebida a base de Ca&ntilde;ahua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="caja_10">
+                <div class="subcaja_1">Beni</div>
+                <div class="subcaja_2" data-keywords="beni">
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/Be-jugodecopoazu.jpeg" alt="" height="266px" width="250px"
+                                style="width: 250px ;cursor: pointer;" onclick="openModalbe()">
+                            <div class="nombre">Copoaz&uacute;</div>
+                            <div id="Be" class="departamentobe">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalbe()">&times;</span>
+                                    <img src="../imagenes/Be-jugodecopoazu.jpeg" class="imag">
+                                    <br>
+                                    <p>Bebida a base de Ca&ntilde;ahua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="caja_11">
+                <div class="subcaja_1">Pando</div>
+                <div class="subcaja_2" data-keywords="pando">
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/Pa-jugodeacai.jpeg" alt="" height="266px" width="250px"
+                                style="width: 250px ;cursor: pointer;" onclick="openModalpa()">
+                            <div class="nombre">Aca&iacute;</div>
+                            <div id="Pa" class="departamentopa">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalpa()">&times;</span>
+                                    <img src="../imagenes/Pa-jugodeacai.jpeg" class="imag">
+                                    <br>
+                                    <p>Bebida a base de Ca&ntilde;ahua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="caja_f">
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/facebook-brands-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Facebook</div>
+                </div>
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/square-whatsapp-brands-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Whatsapp</div>
+                </div>
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/square-x-twitter-brands-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Twitter</div>
+                </div>
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/square-instagram-brands-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Instagram</div>
+                </div>
+            </div>
+            <div class="caja_f">
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/telegram-brands-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Telegram</div>
+                </div>
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/tiktok-brands-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Tik Tok</div>
+                </div>
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/envelope-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Correo elctrónico</div>
+                </div>
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/location-dot-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Encuentranos en</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../funcion/funcion_bebida.js"></script>
+</body>
+
+</html>
