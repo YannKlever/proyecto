@@ -1,0 +1,190 @@
+.main {
+    background: url(../imagenes/fondoback.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 6fr 2fr;
+}
+
+.box_1 {
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.caja_1 {
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.caja_2 {
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.subcaja_1 {
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%;
+    gap: 10px;
+
+    animation: estirar 5s linear both;
+}
+
+.subcaja_2 {
+    background-color: rgb(236, 236, 236);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    font-family: cursive;
+    font-size: 120%;
+    gap: 10px;
+
+    animation: estirar 5s linear both;
+}
+
+.subcaja_2 ul li {
+    list-style: none;
+}
+
+.box_2 {
+    background: url(../imagenes/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+}
+
+.caja_3 {
+    background: linear-gradient(to bottom, blue, white, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    align-content: center;
+    color: transparent;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 400%;
+    gap: 10px;
+}
+
+.formulario_1 {
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 8fr 1fr;
+
+    animation-name: aparecer;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+}
+.subcaja_3{
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sub1caja_1{
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.sub2caja_1{
+    align-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+.sub2caja_1 label{
+    align-content: center;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 10px;
+}
+.sub2caja_1 [type="text"], [type="email"], [type="number"], [type="datetime-local"]{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: rgb(219, 241, 250);
+    padding: 10px;
+    font-size: 20px;
+}
+.sub2caja_1 [type="radio"]{
+    width: 10%;
+    height: 30%;
+    background-color: rgb(219, 241, 250);
+    padding: 10px;
+}
+.sub2caja_1 select{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: rgb(219, 241, 250);
+    padding: 10px;
+    font-size: 20px;
+}
+.sub2caja_2{
+    align-content: center;
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.subcaja_4{
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.2fr 1fr 1fr;
+}
+#btn_reservar{
+    background: radial-gradient(yellow, green);
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 30px;
+    grid-column: 2;
+}
+#btn_limpiar{
+    background: radial-gradient(purple, red);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 30px;
+    grid-column: 4;
+}
+@media (max-width: 768px) {
+    .main{
+        grid-template-rows: 1fr 3fr 8fr 1.5fr;
+    }
+    .box_1, .subcaja_3 {
+        grid-template-columns: 1fr;
+    }
+    #btn_reservar{
+        height: 60%;
+    }
+    #btn_limpiar{
+        height: 60%;
+    }
+}

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida</title>
+    <link rel="stylesheet" href="../estilos/styles_general.css">
+    <link rel="stylesheet" href="../estilos/styles_comida.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="caja_logo">
+                <img src="../imagenes/logotransp.png" alt="Logo" id="imagen_logo">
+            </div>
+            <div class="caja_nav">
+                <ul>
+                    <li><a href="../inicio.html">Inicio</a></li>
+                    <li><a href="../assets/comida.html">Menú de platos</a></li>
+                    <li><a href="../assets/bebidas.html">Menú de bebidas</a></li>
+                    <li><a href="../assets/curiosidades.html">Curiosidades</a></li>
+                    <li><a href="../assets/reservas.html">Reservas</a></li>
+                </ul>
+            </div>
+        </header>
+        <nav class="box_1">
+            <div class="caja_1">
+                <div id="comida">
+                    <p >Men&uacute;</p>
+                    <p >De</p>
+                    <p >Platos</p>
+                </div>
+            </div>
+        </nav>
+        <div class="box_2">
+            <div class="caja_3">
+                <div class="subcaja_1">La Paz</div>
+                <div class="subcaja_2">
+                <div class="subcaja_item">
+                    <div class="imagen">
+                        <img src="../imagenes/lp-fricase.png" alt="FRICASE" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModal()">
+                    <div class="nombre">Fricase</div>
+                    <div id="Lp" class="departamento">
+                        <div class="contenido-depto">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img src="../imagenes/lp-fricase.png" alt="imagen" class="imag">
+                            <p>Platillo a base de aj&iacute;,</p>
+                            <p>con carne de pollo o cerdo,</p>
+                            <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="subcaja_item">
+                    <div class="imagen">
+                        <img src="../imagenes/lp-platopaceño.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalpac()">
+                        <div class="nombre">Plato Pace&ntilde;o</div>
+                        <div id="Pac" class="departamentopac">
+                            <div class="contenido-depto">
+                                <span class="close" onclick="closeModalpac()">&times;</span>
+                                <img src="../imagenes/lp-platopaceño.jpg" alt="imagen" class="imag">
+                                <p>Platillo a base de guarniciones t&iacute;picas.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcaja_item">
+                    <div class="imagen">
+                        <img src="../imagenes/lp-sajta.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalsaj()">
+                        <div class="nombre">Sajta</div>
+                        <div id="Saj" class="departamentosaj">
+                            <div class="contenido-depto">
+                                <span class="close" onclick="closeModalsaj()">&times;</span>
+                                <img src="../imagenes/lp-sajta.jpg" alt="imagen" class="imag">
+                                <p>Platillo a base de aj&iacute;,</p>
+                                <p>con carne de pollo,</p>
+                                <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="caja_4">
+                <div class="subcaja_1">Oruro</div>
+                <div class="subcaja_2">
+                <div class="subcaja_item">
+                    <div class="imagen">
+                        <img src="../imagenes/or-brazuelo.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalbra()">
+                        <div class="nombre">Brazuelo</div>
+                        <div id="Bra" class="departamentobra">
+                            <div class="contenido-depto">
+                                <span class="close" onclick="closeModalbra()">&times;</span>
+                                <img src="../imagenes/or-brazuelo.jpg" alt="imagen" class="imag">
+                                <p>Platillo acompa&ntilde;ado de,</p>
+                                <p>arroz y carne frita de cordero,</p>
+                                <p>en este caso brazuelo de cordero.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcaja_item">
+                    <div class="imagen">
+                        <img src="../imagenes/or-charquekan.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalchar()">
+                        <div class="nombre">Charquekan</div>
+                        <div id="Char" class="departamentochar">
+                            <div class="contenido-depto">
+                                <span class="close" onclick="closeModalchar()">&times;</span>
+                                <img src="../imagenes/or-charquekan.jpg" alt="imagen" class="imag">
+                                <p>Platillo de Charque desmenuzado,</p>
+                                <p>de carne de cordero o llama,</p>
+                                <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcaja_item">
+                    <div class="imagen">
+                        <img src="../imagenes/or-mechadodecordero.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalmech()">
+                        <div class="nombre">Mechado</div>
+                        <div id="Mech" class="departamentomech">
+                            <div class="contenido-depto">
+                                <span class="close" onclick="closeModalmech()">&times;</span>
+                                <img src="../imagenes/or-mechadodecordero.jpg" alt="imagen" class="imag">
+                                <p>Platillo de carne de cordero,</p>
+                                <p>acompa&ntilde;ado de arroz y ensalada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="caja_5">
+                <div class="subcaja_1">Potos&iacute;</div>
+                <div class="subcaja_2">
+                <div class="subcaja_item">
+                    <div class="imagen">
+                        <img src="../imagenes/po-ajidepataskha.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalpat()">
+                        <div class="nombre">Patasca</div>
+                        <div id="Pat" class="departamentopat">
+                            <div class="contenido-depto">
+                                <span class="close" onclick="closeModalpat()">&times;</span>
+                                <img src="../imagenes/po-ajidepataskha.jpg" alt="imagen" class="imag">
+                                <p>Platillo a base de aj&iacute;,</p>
+                                <p>con carne de cerdo,</p>
+                                <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcaja_item">
+                    <div class="imagen">
+                        <img src="../imagenes/po-calapurka.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalcala()">
+                        <div class="nombre">Calapurka</div>
+                        <div id="Cala" class="departamentocala">
+                            <div class="contenido-depto">
+                                <span class="close" onclick="closeModalcala()">&times;</span>
+                                <img src="../imagenes/po-calapurka.jpg" alt="imagen" class="imag">
+                                <p>Una sopa con una caracter&iacute;stica,</p>
+                                <p>poco usual.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcaja_item">
+                    <div class="imagen">
+                        <img src="../imagenes/po-cazuela.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalcaz()">
+                        <div class="nombre">Cazuela</div>
+                        <div id="Caz" class="departamentocaz">
+                            <div class="contenido-depto">
+                                <span class="close" onclick="closeModalcaz()">&times;</span>
+                                <img src="../imagenes/po-cazuela.jpg" alt="imagen" class="imag">
+                                <p>Platillo a base de caldo,</p>
+                                <p>de carne de pollo o res,</p>
+                                <p>acompa&ntilde;ado de verduras.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="caja_6">
+                <div class="subcaja_1">Cochabamba</div>
+                <div class="subcaja_2">
+                <div class="subcaja_item">
+                    <div class="imagen">
+                        <img src="../imagenes/co-fideosuchu.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalfide()">
+                        <div class="nombre">Fideosuchu</div>
+                        <div id="Fide" class="departamentofide">
+                            <div class="contenido-depto">
+                                <span class="close" onclick="closeModalfide()">&times;</span>
+                                <img src="../imagenes/co-fideosuchu.jpg" alt="imagen" class="imag">
+                                <p>Platillo a base de aj&iacute;,</p>
+                                <p>con charque y fideo,</p>
+                                <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcaja_item">
+                    <div class="imagen">
+                        <img src="../imagenes/co-piquemacho.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalpiq()">
+                        <div class="nombre">Pique Macho</div>
+                        <div id="Piq" class="departamentopiq">
+                            <div class="contenido-depto">
+                                <span class="close" onclick="closeModalpiq()">&times;</span>
+                                <img src="../imagenes/co-piquemacho.jpg" alt="imagen" class="imag">
+                                <p>Platillo a base de varios tipos de carne,</p>
+                                <p>acompa&ntilde;ados de chorrellana y papas fritas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcaja_item">
+                    <div class="imagen">
+                        <img src="../imagenes/co-silpancho.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalsil()">
+                        <div class="nombre">Silpancho</div>
+                        <div id="Sil" class="departamentosil">
+                            <div class="contenido-depto">
+                                <span class="close" onclick="closeModalsil()">&times;</span>
+                                <img src="../imagenes/co-silpancho.jpg" alt="imagen" class="imag">
+                                <p>Platillo a base de apanado de res,</p>
+                                <p>con fideo o arroz,</p>
+                                <p>y ensalada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="caja_7">
+                <div class="subcaja_1">Chuquisaca</div>
+                <div class="subcaja_2">
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/ch-ajidecumanda.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalcum()">
+                            <div class="nombre">Cumanda</div>
+                            <div id="Cum" class="departamentocum">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalcum()">&times;</span>
+                                    <img src="../imagenes/ch-ajidecumanda.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/ch-fritanga.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalfrit()">
+                            <div class="nombre">Fritanga</div>
+                            <div id="Frit" class="departamentofrit">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalfrit()">&times;</span>
+                                    <img src="../imagenes/ch-fritanga.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/ch-Karapecho.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalkar()">
+                            <div class="nombre">Karapecho</div>
+                            <div id="Kar" class="departamentokar">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalkar()">&times;</span>
+                                    <img src="../imagenes/ch-Karapecho.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caja_8">
+                <div class="subcaja_1">Tarija</div>
+                <div class="subcaja_2">
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/ta-arvejada.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalar()">
+                            <div class="nombre">Arvejada</div>
+                            <div id="Ar" class="departamentoar">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalar()">&times;</span>
+                                    <img src="../imagenes/ta-arvejada.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/ta-ranga.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalran()">
+                            <div class="nombre">Ranga</div>
+                            <div id="Ran" class="departamentoran">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalran()">&times;</span>
+                                    <img src="../imagenes/ta-ranga.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/ta-saice.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalsai()">
+                            <div class="nombre">Saice</div>
+                            <div id="Sai" class="departamentosai">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalsai()">&times;</span>
+                                    <img src="../imagenes/ta-saice.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caja_9">
+                <div class="subcaja_1">Santa Cruz</div>
+                <div class="subcaja_2">
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/scz-locrodegallina.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModaloc()">
+                            <div class="nombre">Locro</div>
+                            <div id="Loc" class="departamentoloc">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModaloc()">&times;</span>
+                                    <img src="../imagenes/scz-locrodegallina.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/scz-majadito.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalmaj()">
+                            <div class="nombre">Majadito</div>
+                            <div id="Maj" class="departamentomaj">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalmaj()">&times;</span>
+                                    <img src="../imagenes/scz-majadito.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/scz-pacumutu.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalpacum()">
+                            <div class="nombre">Pacumutu</div>
+                            <div id="Pacum" class="departamentopacum">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalpacum()">&times;</span>
+                                    <img src="../imagenes/scz-pacumutu.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caja_10">
+                <div class="subcaja_1">Beni</div>
+                <div class="subcaja_2">
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/be-keperi.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalkep()">
+                            <div class="nombre">Keper&iacute;</div>
+                            <div id="Kep" class="departamentokep">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalkep()">&times;</span>
+                                    <img src="../imagenes/be-keperi.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/be-masaco.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalmas()">
+                            <div class="nombre">Masaco</div>
+                            <div id="Mas" class="departamentomas">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalmas()">&times;</span>
+                                    <img src="../imagenes/be-masaco.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/be-surubialhorno.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalsur()">
+                            <div class="nombre">Surub&iacute; al Horno</div>
+                            <div id="Sur" class="departamentosur">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalsur()">&times;</span>
+                                    <img src="../imagenes/be-surubialhorno.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caja_11">
+                <div class="subcaja_1">Pando</div>
+                <div class="subcaja_2">
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/pa-escabechedetorcaza.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalesc()">
+                            <div class="nombre">Esc. de Torcaza</div>
+                            <div id="Esc" class="departamentoesc">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalesc()">&times;</span>
+                                    <img src="../imagenes/pa-escabechedetorcaza.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/pa-farofa.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalfar()">
+                            <div class="nombre">Farofa</div>
+                            <div id="Far" class="departamentofar">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalfar()">&times;</span>
+                                    <img src="../imagenes/pa-farofa.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subcaja_item">
+                        <div class="imagen">
+                            <img src="../imagenes/pa-sudadodesurbi.jpg" alt="" height="266px" width="250px" style="width: 250px ;cursor: pointer;" onclick="openModalsud()">
+                            <div class="nombre">Sudado de Surub&iacute;</div>
+                            <div id="Sud" class="departamentosud">
+                                <div class="contenido-depto">
+                                    <span class="close" onclick="closeModalsud()">&times;</span>
+                                    <img src="../imagenes/pa-sudadodesurbi.jpg" alt="imagen" class="imag">
+                                    <p>Platillo a base de aj&iacute;,</p>
+                                    <p>con carne de pollo o cerdo,</p>
+                                    <p>acompa&ntilde;ado de guarniciones tipicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="caja_f">
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/facebook-brands-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Facebook</div>
+                </div>
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/square-whatsapp-brands-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Whatsapp</div>
+                </div>
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/square-x-twitter-brands-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Twitter</div>
+                </div>
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/square-instagram-brands-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Instagram</div>
+                </div>
+            </div>
+            <div class="caja_f">
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/telegram-brands-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Telegram</div>
+                </div>
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/tiktok-brands-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Tik Tok</div>
+                </div>
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/envelope-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Correo elctrónico</div>
+                </div>
+                <div class="caja_f_1">
+                    <div class="caja_f_1_1">
+                        <img src="../iconos/location-dot-solid.svg" id="icono">
+                    </div>
+                    <div class="caja_f_1_2">Encuentranos en</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../funcion/funcion_comida.js"></script>
+</body>
+</html>

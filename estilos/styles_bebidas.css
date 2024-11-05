@@ -1,0 +1,330 @@
+.main{
+    gap: 10px;
+    background-image: url(../imagenes/fondoback.jpg);
+    background-size: 100% 100%;
+    padding: 10px;
+    color: brown;
+}
+.box_1{
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.caja_1{
+
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+}
+#comida{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#comida p{
+    text-align: center;
+    font-size: 3em;
+    padding: 4px;
+    padding-left: 25px;
+    animation: cambio 3s infinite linear alternate;
+}
+@keyframes cambio {
+    0%{
+        color: red;
+    }
+    50%{
+        color: yellow;
+    }
+    100%{ color: green;}
+}
+.box_2{
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-between;
+}
+.caja_3{
+    padding: 10px;
+    gap: 10px;
+    overflow: hidden;
+    max-width: 600px;
+    margin: auto;
+}
+.caja_3:hover{
+    background:rgb(1, 110, 6);
+    background: linear-gradient(0deg,rgba(1,110,6,1)22%,rgba(255,0,19,1)100%);
+}
+.caja_5:hover{
+    background-color: rgb(207, 31, 31);
+}
+.caja_6:hover{
+    background-color: rgb(60, 204, 244);
+}
+.caja_7:hover{
+    background-color: rgb(243, 26, 6);
+}
+.caja_8:hover{
+    background: rgba(255, 255, 255);
+    background: linear-gradient(0deg,rgba(255,255,255,1)10%,rgba(253,29,29,1)85%);
+}
+.caja_9:hover{
+    background:rgb(18, 118, 5);
+    background: linear-gradient(0deg,rgba(18,118,5,1)10%,rgba(255,255,255,0.69841118085952)56%
+    ,rgba(2,121,25,1)98%);
+}
+.caja_10:hover{
+    background-color: green;
+}
+.caja_11:hover{
+    background:rgb(255, 255, 255);
+    background: linear-gradient(0deg,rgba(255,255,255,1)10%,rgba(0,107,21,1)74%);
+}
+.subcaja_2{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    gap: 10px;
+}
+.subcaja_item a{
+    text-decoration: none;
+}
+
+.caja_4{
+    
+        padding: 10px;
+        gap: 10px;
+        overflow: hidden;
+        max-width: 600px;
+        margin: auto;
+}
+.caja_4:hover{
+    background-color: rgb(141, 20, 20);
+}
+.caja_5{
+    padding: 10px;
+        gap: 10px;
+        overflow: hidden;
+        max-width: 600px;
+        margin: auto;
+}
+.caja_6{
+    padding: 10px;
+        gap: 10px;
+        overflow: hidden;
+        max-width: 600px;
+        margin: auto;
+}
+.caja_7{
+    padding: 10px;
+        gap: 10px;
+        overflow: hidden;
+        max-width: 600px;
+        margin: auto;
+}
+.caja_8{
+    padding: 10px;
+        gap: 10px;
+        overflow: hidden;
+        max-width: 600px;
+        margin: auto;
+}
+.caja_9{
+    padding: 10px;
+        gap: 10px;
+        overflow: hidden;
+        max-width: 600px;
+        margin: auto;
+}
+.caja_10{
+    padding: 10px;
+        gap: 10px;
+        overflow: hidden;
+        max-width: 600px;
+        margin: auto;
+}
+.caja_11{
+    padding: 10px;
+        gap: 10px;
+        overflow: hidden;
+        max-width: 600px;
+        margin: auto;
+}
+.imagen{
+    padding: 10px;
+    gap: 10px;
+    height: 100%;
+}
+.subcaja_1{
+    font-weight: bold;
+    color: antiquewhite;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.nombre{
+    color: yellow;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    font-family: cursive;
+}
+.departamento{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(1, 110, 6);
+    background: linear-gradient(0deg,rgba(1,110,6,1)22%,rgba(255,0,19,1)100%);
+}
+.departamentor{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(141, 20, 20);
+}
+.departamentopo{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241, 5, 5);
+}
+.departamentoco{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(5, 178, 201);
+}
+.departamentochu{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(160, 6, 6);
+}
+.departamentota{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255);
+    background: linear-gradient(0deg,rgba(255,255,255,1)10%,rgba(253,29,29,1)85%);
+}
+.departamentopa{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(255, 255, 255);
+    background: linear-gradient(0deg,rgba(255,255,255,1)10%,rgba(0,107,21,1)74%);
+}
+.departamentosc{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(18, 118, 5);
+    background: linear-gradient(0deg,rgba(18,118,5,1)10%,rgba(255,255,255,0.69841118085952)56%
+    ,rgba(2,121,25,1)98%);
+}
+.departamentota{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(242, 252, 253);
+}
+.departamentobe{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(13, 116, 3);
+}
+
+.contenido-depto{
+    margin: auto;
+    padding: 20px;
+    border:  6px solid #030303;
+    border-radius: 20px;
+    max-width: 500px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+.imag{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.close:hover,.close:focus{
+    color: black;
+    text-decoration: none;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+#search{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(244, 226, 192);
+    color: black;
+}
+#lupa{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .box_2 {
+        grid-template-columns: 1fr;
+    }
+}

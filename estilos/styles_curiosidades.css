@@ -1,0 +1,83 @@
+.main {
+    background: url(../imagenes/fondoback.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 3fr 2fr;
+}
+
+.box_1 {
+    background: linear-gradient(to bottom, red, red, yellow, green, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    align-content: center;
+    color: transparent;
+    font-size: 50px;
+    padding: 10px;
+    gap: 10px;
+
+    animation-name: deslizar_derecha;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+}
+
+.box_2 {
+    padding: 10px;
+    gap: 10px;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.caja_1 {
+    text-align: center;
+    border-radius: 20px;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+
+    animation-name: aparecer;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: initial;
+}
+
+.subcaja_1 {
+    background: linear-gradient(to bottom, white, gray);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.subacaja_2 {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    background: linear-gradient(to top, black, red, yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#imagen_region {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0px 0px 20px 20px;
+}
+@media (max-width: 768px) {
+    .main{
+        grid-template-rows: 1fr 0.5fr 8fr 1.5fr;
+    }
+    .box_2 {
+        grid-template-columns: 1fr;
+    }
+}

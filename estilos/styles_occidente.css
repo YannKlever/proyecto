@@ -1,0 +1,206 @@
+.main {
+    background: radial-gradient(rgb(0, 0, 51), black, black, black, rgb(0, 0, 51), black);
+    padding: 10px;
+    gap: 10px;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 12fr 2fr;
+}
+
+.box_1 {
+    background: linear-gradient(to bottom, red, red, yellow, green, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    align-content: center;
+    font-size: 350%;
+    padding: 10px;
+    gap: 10px;
+
+    animation-name: llenar_color_letra;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+}
+
+.box_2 {
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.caja_1 {
+    padding: 10px;
+    gap: 10px;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.caja_2 {
+    padding: 10px;
+    gap: 10px;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.subcaja_1 {
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sub1caja_1,
+.sub1caja_5,
+.sub1caja_7 {
+    padding: 10px;
+    text-align: left;
+    align-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 300%;
+    gap: 10px;
+}
+
+.sub1caja_1:hover {
+    background: linear-gradient(to bottom, red, red, green, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 400%;
+    padding: 0;
+}
+
+.sub1caja_5:hover {
+    background: linear-gradient(to right, red, pink);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 400%;
+    padding: 0;
+}
+
+.sub1caja_7:hover {
+    background: linear-gradient(to right bottom, red, white, red, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 400%;
+    padding: 0;
+}
+
+.sub1caja_2,
+.sub1caja_6,
+.sub1caja_8 {
+    text-align: left;
+    font-family: cursive;
+    font-size: 100%;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.sub1caja_2 ul,
+.sub1caja_6 ul,
+.sub1caja_8 ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+
+    animation: slider_1 40s infinite ease-in-out;
+}
+
+.sub1caja_2 li,
+.sub1caja_6 li,
+.sub1caja_8 li {
+    list-style: none;
+    width: 100%;
+}
+
+.sub1caja_2:hover {
+    background: linear-gradient(to bottom, red, red, green, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 120%;
+    padding: 0;
+}
+
+.sub1caja_6:hover {
+    background: linear-gradient(to right, red, pink);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 120%;
+    padding: 0;
+}
+
+.sub1caja_8:hover {
+    background: linear-gradient(to right bottom, red, white, red, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 120%;
+    padding: 0;
+}
+
+.subcaja_2 {
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+}
+
+.sub1caja_3 {
+    overflow: hidden;
+}
+
+.sub1caja_3 ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+
+    animation: slider_1 20s infinite ease-in-out;
+}
+
+.sub1caja_3 li {
+    list-style: none;
+    width: 100%;
+}
+
+#imagen_tur {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.sub1caja_4 {
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sub2caja_1 {
+    background: linear-gradient(to bottom, red, red, yellow, green, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    align-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+
+    animation-name: llenar_color_letra;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+}
+@media (max-width: 768px) {
+    .caja_1, .caja_2 {
+        grid-template-columns: 1fr;
+    }
+}
